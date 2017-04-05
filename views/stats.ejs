@@ -1,0 +1,35 @@
+<% include ./partials/header.ejs %>
+
+<% include ./partials/navigation.ejs %>
+
+<div class="section values">
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+  </div>
+<div class="section values">
+    <div class="container">
+      <div class="row">
+        <table class="table table-striped table-hover">
+            <tr>
+                <th class="text-center">First Name</th>
+
+            </tr>
+            <% for (var i = 0; i < sleep.length; i++) { %>
+                <tr>
+                  <td><%= sleep[i].date %></td>
+
+
+                    <td>
+                    </td>
+                </tr>
+            <% } %>
+        </table>
+      </div>
+      <a href="stats"><i class="fa fa-arrow-circle-o-right fa-5x pull-right next-arrow" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+<% include ./partials/footer.ejs %>
